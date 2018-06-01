@@ -1,0 +1,25 @@
+<import src="../../vendor/zanui-weapp/dist/dialog/index.wxml" />
+<!-- 直接使用 zan-dialog 模板，并且直接传入 zanDialog -->
+<template is="zan-dialog" data="{{ zanDialog }}"></template>
+ <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class='userinfo-nickname'>{{nickname ? Nickname : ""}}</text>
+    </view> 
+<view class='center'>
+  <view class='door'>
+    <text>图书馆数据中心机房(靠大厅)</text>
+    <button type="primary" class='door' id='1' bindtap='door' disabled="{{disabled1}}" >开门</button>
+  </view>
+  <view class='door'>
+    <text>图书馆数据中心机房</text>
+    <button type="primary" id='2' bindtap='door' disabled="{{disabled2}}" >开门</button>
+  </view>
+  <view class='door'>
+    <text class='door'>图书馆准备间</text>
+    <button type="primary" class='door'  id='3' bindtap='door' disabled="{{disabled3}}">开门</button>
+  </view>
+  <view class='door'>
+    <text>图书馆UPS间</text>
+    <button type="primary" id='4' bindtap='door' disabled="{{disabled4}}">开门</button>
+  </view>
+</view>

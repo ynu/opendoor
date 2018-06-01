@@ -1,0 +1,63 @@
+<import src="../../vendor/zanui-weapp/dist/dialog/index.wxml" />
+<!-- 直接使用 zan-dialog 模板，并且直接传入 zanDialog -->
+<template is="zan-dialog" data="{{ zanDialog }}"></template>
+<view class="container">
+  <view class="biaoti">
+    <text>查看设置用户权限</text>
+  </view>
+</view>
+<view class="biaoti1">
+  <text>{{name}}</text>
+</view>
+
+<view class="door">
+  <view class='vertiacal-left'>
+    <text>图书馆数据中心机房(靠大厅)</text>
+  </view>
+  <view class='vertiacal-right'>
+    <switch id="1" checked="{{door1}}" bindchange="switchChange1"></switch>
+  </view>
+
+</view>
+<view class="door">
+  <view class='vertiacal-left'>
+    <text>图书馆数据中心机房</text>
+  </view>
+  <view class='vertiacal-right'>
+    <switch id="2" checked="{{door2}}" bindchange="switchChange2"></switch>
+  </view>
+
+</view>
+<view class="door">
+  <view class='vertiacal-left'>
+    <text>图书馆准备间</text>
+  </view>
+  <view class='vertiacal-right'>
+    <switch id="3" checked="{{door3}}" bindchange="switchChange3"></switch>
+  </view>
+
+</view>
+<view class="door">
+  <view class='vertiacal-left'>
+    <text>图书馆UPS间</text>
+  </view>
+  <view class='vertiacal-right'>
+    <switch id="4" checked="{{door4}}" bindchange="switchChange4"></switch>
+  </view>
+</view>
+<view class="door">
+  <view class='vertiacal-left'>
+    <text>管理员</text>
+  </view>
+  <view class='vertiacal-right'>
+    <switch id="5" checked="{{admin}}" bindchange="switchChange5"></switch>
+  </view>
+</view>
+<view class="container">
+  <view class="biaoti">
+    <button bindtap='push' class='tijiao'>提交</button>
+  </view>
+  <view class="biaoti">
+    <button bindtap='del' class='tijiao'>删除</button>
+  </view>
+</view>

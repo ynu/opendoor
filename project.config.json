@@ -12,5 +12,6 @@
 	},
 	"appid": "wx6d008911c2a8df39",
 	"projectname": "qcloud",
+	"compileType": "miniprogram",
 	"condition": {}
 }

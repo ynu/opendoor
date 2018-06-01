@@ -1,0 +1,15 @@
+<view class="{{show}}">  
+  <view class="search-result">  
+      <view class="result-item" wx:for="{{datas}}" wx:key="openid">  
+        <view class="icon{{item.isonly=='0' ? ' nocopyright' : ''}}"></view>  
+        <text class="title" wx:if="{{item.door==1}}">图书馆主机中心机房(靠大厅)</text>
+        <text class="title" wx:if="{{item.door==2}}">图书馆主机中心机房</text>
+        <text class="title" wx:if="{{item.door==3}}">准备间</text>
+        <text class="title" wx:if="{{item.door==4}}">UPS间</text>  
+        <view class="subtitle">  
+          <text >{{item.name}}({{item.unit}}) {{item.time}}</text>
+        </view>  
+      </view>
+  </view>
+</view>
+<view class="{{message}}"><text>对不起你没有权限访问!</text></view>

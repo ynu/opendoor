@@ -1,13 +1,44 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/addCgi/addCgi"
+    "pages/door/door",
+    "pages/user/index",
+    "pages/useradmin/index",
+    "pages/log/index",
+    "pages/apply/index",
+    "pages/useradmin/user"
   ],
-  "window":{
-    "backgroundColor":"#F6F6F6",
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "Wafer Quick Start",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "门禁系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#479de6",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "iconPath": "/images/iconfont-home.png",
+        "selectedIconPath": "images/iconfont-home-active.png",
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "iconPath": "/images/iconfont-list.png",
+        "selectedIconPath": "/images/iconfont-list-active.png",
+        "pagePath": "pages/door/door",
+        "text": "门禁"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "用户",
+        "iconPath": "/images/iconfont-user.png",
+        "selectedIconPath": "/images/iconfont-user-active.png"
+      }
+    ]
   }
 }

@@ -1,0 +1,33 @@
+<import src="../../vendor/zanui-weapp/dist/dialog/index.wxml" />
+<!-- 直接使用 zan-dialog 模板，并且直接传入 zanDialog -->
+<template is="zan-dialog" data="{{ zanDialog }}"></template>
+<view class="userinfo" bindtap="login">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class='userinfo-nickname'>{{nickname ? Nickname : ""}}</text>
+    </view>
+  <view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+      <view class="zan-cell__bd" hover-class="weui-cell_active" bindtap='useradmin'>用户管理</view>
+      <view class="zan-cell__ft"></view>
+    </view>
+  </view>
+   <view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+      <view class="zan-cell__bd" hover-class="weui-cell_active" bindtap='log'>日志查询</view>
+      <view class="zan-cell__ft"></view>
+    </view>
+  </view>
+   <view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+      <view class="zan-cell__bd" hover-class="weui-cell_active" bindtap='apply'>申请访问</view>
+      <view class="zan-cell__ft"></view>
+    </view>
+  </view>
+   <view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+      <text class='tel'>联系我们:</text>
+      <text class='tel'>65031141</text>
+      <text class='mail'>liyang@ynu.edu.cn</text>
+
+    </view>
+  </view>
