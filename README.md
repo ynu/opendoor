@@ -14,14 +14,14 @@
 ##### start wechat minapp server
 
 1. cd server
-2. copy and modify `config.js`
+2. copy `config.js.default` to `config.js`, and modify `<your_server_host>`
 3. npm i
 4. npm start
 
 ##### start wechat minapp client
 
 1. open client in `wechat-dev-tools`
-2. copy and modify `config.js`
+2. copy `config.js.default` to `config.js`, and modify `<your_app_id>`/`<your_app_secret>`/`<your_backend_opendoor_host>`
 3. upload
 
 ### License
