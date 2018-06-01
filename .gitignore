@@ -2,3 +2,6 @@
 # ignore the vscode project files
 .vscode/
 **/.vscode/
+
+client/config.js
+server/config.js

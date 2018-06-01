@@ -3,7 +3,8 @@
  */
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
-var host = 'https://cmlzwd8n.qcloud.la';
+// var host = 'https://cmlzwd8n.qcloud.la';
+var host = 'https://<your_server_host>';
 
 var config = {
 
@@ -25,6 +26,20 @@ var config = {
 
         // 开门接口
         openDoorUrl: `${host}/weapp/opendoor`,
+
+        getdoor: `${host}/weapp/getdoor`,
+
+        getuserinfo: `${host}/weapp/user`,
+        
+        getlog: `${host}/weapp/getlog`,
+
+        getuser: `${host}/weapp/getuser`,
+
+        setdoor: `${host}/weapp/setdoor`,
+
+        deluser: `${host}/weapp/deluser`,
+
+        insertuser: `${host}/weapp/insertuser`,
     }
 };
 
