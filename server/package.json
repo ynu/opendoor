@@ -21,7 +21,7 @@
         "lodash": "^4.17.4",
         "mkdir-p": "0.0.7",
         "moment": "^2.22.1",
-        "moment-timezone": "^0.5.16",
+        "moment-timezone": "^0.5.35",
         "mysql": "^2.14.1",
         "node-fetch": "^2.1.2",
         "pify": "^2.3.0",
